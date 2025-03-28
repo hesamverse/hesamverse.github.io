@@ -1,0 +1,4 @@
+This is a Brave Creators publisher verification file.
+
+Domain: hesamverse.github.io
+Token: c21daff5068edacaa1d2e6bddb4d006c431d98226809b845ae4736229f08bae8
