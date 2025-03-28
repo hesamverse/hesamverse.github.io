@@ -21,32 +21,51 @@
       min-height: 100vh;
       padding: 2rem;
       text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
     h1 {
       font-size: 3rem;
       margin-bottom: 0.25rem;
       color: #00c6ff;
+      animation: fadeIn 1.8s ease-in;
     }
     h2 {
       font-size: 1.2rem;
       font-weight: 400;
       color: #bbbbbb;
       margin-top: 0;
+      margin-bottom: 1.5rem;
+      animation: fadeIn 2s ease-in;
     }
     p {
-      max-width: 700px;
+      max-width: 90%;
       line-height: 1.8;
       margin-bottom: 1rem;
+      animation: fadeIn 2.2s ease-in;
     }
     strong {
       color: #fff;
     }
     .links {
       margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      animation: fadeIn 2.4s ease-in;
     }
     .links a {
       color: #00c6ff;
-      margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
       border-bottom: 2px solid transparent;
@@ -60,12 +79,31 @@
       color: #888;
       margin-top: 2.5rem;
       font-size: 1rem;
+      max-width: 90%;
+      animation: fadeIn 2.6s ease-in;
     }
     .footer {
       margin-top: 4rem;
       font-size: 0.85rem;
       color: #555;
       font-family: 'Fira Code', monospace;
+      max-width: 90%;
+      animation: fadeIn 2.8s ease-in;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+      .links a {
+        font-size: 0.95rem;
+      }
+      .footer {
+        font-size: 0.75rem;
+      }
     }
   </style>
 </head>
