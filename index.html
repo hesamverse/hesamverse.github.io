@@ -65,18 +65,29 @@
       animation: fadeIn 2.4s ease-in;
     }
     .links a {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
       color: #00c6ff;
       text-decoration: none;
       font-weight: bold;
-      border-bottom: 2px solid transparent;
-      transition: border 0.3s ease;
+      border: 2px solid #00c6ff;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      background-color: rgba(0, 198, 255, 0.05);
+    }
+    .links a img {
+      width: 20px;
+      height: 20px;
     }
     .links a:hover {
-      border-bottom: 2px solid #00c6ff;
+      background-color: #00c6ff;
+      color: #0f0f0f;
     }
     .quote {
       font-style: italic;
-      color: #888;
+      color: #88a;
       margin-top: 2.5rem;
       font-size: 1rem;
       max-width: 90%;
@@ -99,7 +110,7 @@
         font-size: 1rem;
       }
       .links a {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
       }
       .footer {
         font-size: 0.75rem;
@@ -117,10 +128,18 @@
   </p>
 
   <div class="links">
-    <a href="https://github.com/hesamverse" target="_blank">GitHub</a>
-    <a href="https://x.com/hesamverse" target="_blank">X (Twitter)</a>
-    <a href="https://www.reddit.com/user/hesamverse" target="_blank">Reddit</a>
-    <a href="mailto:hesamverse@proton.me">Email</a>
+    <a href="https://github.com/hesamverse" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"> GitHub
+    </a>
+    <a href="https://x.com/hesamverse" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_logo_2023.svg" alt="Twitter"> X (Twitter)
+    </a>
+    <a href="https://www.reddit.com/user/hesamverse" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Reddit_logo_and_wordmark.svg" alt="Reddit"> Reddit
+    </a>
+    <a href="mailto:hesamverse@proton.me">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email"> Email
+    </a>
   </div>
 
   <p class="quote">
