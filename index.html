@@ -4,59 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>hesamverse | Blockchain Dev</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Fira+Code&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #0f0f0f;
-      color: #f1f1f1;
+      background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+      color: #e0e0e0;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
       padding: 2rem;
+      text-align: center;
     }
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 3rem;
+      margin-bottom: 0.25rem;
+      color: #00c6ff;
     }
     h2 {
-      font-weight: normal;
-      color: #999;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #bbbbbb;
       margin-top: 0;
     }
     p {
-      max-width: 600px;
-      text-align: center;
-      line-height: 1.6;
+      max-width: 700px;
+      line-height: 1.8;
       margin-bottom: 1rem;
+    }
+    strong {
+      color: #fff;
+    }
+    .links {
+      margin-top: 1.5rem;
     }
     .links a {
       color: #00c6ff;
       margin: 0 1rem;
       text-decoration: none;
       font-weight: bold;
+      border-bottom: 2px solid transparent;
+      transition: border 0.3s ease;
+    }
+    .links a:hover {
+      border-bottom: 2px solid #00c6ff;
     }
     .quote {
       font-style: italic;
-      color: #bbb;
-      margin-top: 2rem;
+      color: #888;
+      margin-top: 2.5rem;
+      font-size: 1rem;
     }
     .footer {
       margin-top: 4rem;
-      font-size: 0.9rem;
-      color: #666;
+      font-size: 0.85rem;
+      color: #555;
+      font-family: 'Fira Code', monospace;
     }
   </style>
 </head>
 <body>
   <h1>Hesamedine — aka hesamverse</h1>
-  <h2>Blockchain & AI Developer | Old-School Values, Future-Ready Tools</h2>
+  <h2>Blockchain & AI Developer · Old-School Values · Future-Ready Tools</h2>
 
   <p>
-    Passionate about building secure, efficient, and transparent financial systems with <strong>Solidity</strong>, <strong>Rust</strong>, and <strong>AI</strong>. With roots in financial management and a love for freedom, I bridge the old world and the decentralized future.
+    I build secure, transparent, and decentralized systems using <strong>Solidity</strong>, <strong>Rust</strong>, and <strong>AI</strong>. <br>
+    With roots in financial management and a philosophy rooted in freedom & transparency, I bridge classic thought and cutting-edge code.
   </p>
 
   <div class="links">
@@ -70,7 +89,7 @@
   </p>
 
   <div class="footer">
-    Made with ☕ & code — somewhere between a ledger and a library.
+    Made with ☕ & code — somewhere between a ledger and a library 📚
   </div>
 </body>
 </html>
