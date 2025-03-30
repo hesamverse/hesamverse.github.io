@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'EB Garamond', serif;
+      background: linear-gradient(135deg, #0f1c1f, #111820);
+      color: #d5c7b1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #c4a47c;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .links {
+      flex: 1;
+      max-width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .links a {
+      color: #c4a47c;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #c4a47c;
+      padding: 0.75rem 1.25rem;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      background-color: rgba(196, 164, 124, 0.05);
+      font-size: 1.2rem;
+      display: inline-block;
+    }
+
+    .links a:hover {
+      background-color: #c4a47c;
+      color: #1b1b1b;
+    }
+
+    .description {
+      flex: 2;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      max-width: 600px;
+      text-align: justify;
+    }
+
+    .divider {
+      margin: 3rem auto 1rem;
+      border: 0;
+      height: 2px;
+      background-color: #c4a47c;
+      width: 100%;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .description {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+
+      .links {
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>DevPathFinder</h1>
+
+  <div class="container">
+    <div class="links">
+      <a href="https://github.com/hesamverse/DevPathFinder.git" target="_blank">🚀 DevPathFinder</a>
+    </div>
+    <div class="description">
+      <p>
+        <strong>DevPathFinder</strong> is a fun and interactive personality analyzer for developers.
+        Just enter a few keywords that describe your personality or interests,
+        and it will suggest the best programming path for you — backend, frontend, or security — with a touch of humor 😎
+      </p>
+    </div>
+  </div>
+
+  <hr class="divider" />
+
+</body>
+</html>
