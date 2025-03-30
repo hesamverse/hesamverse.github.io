@@ -6,24 +6,125 @@
   <title>hesamverse | Blockchain Dev</title>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Fira+Code&display=swap" rel="stylesheet">
   <style>
-    .project-links {
-      margin-top: 3rem;
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'EB Garamond', serif;
+      background: linear-gradient(135deg, #0f1c1f, #111820);
+      color: #d5c7b1;
       display: flex;
       flex-direction: column;
-      gap: 1rem;
       align-items: center;
-      animation: fadeIn 2.5s ease-in;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
     }
-    .project-links a {
-      font-size: 1.1rem;
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.25rem;
+      color: #c4a47c;
+      animation: fadeIn 1.8s ease-in;
+    }
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #a5a5a5;
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+      animation: fadeIn 2s ease-in;
+    }
+    p {
+      max-width: 90%;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      animation: fadeIn 2.2s ease-in;
+    }
+    strong {
+      color: #f5f5f5;
+    }
+    .links {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      animation: fadeIn 2.4s ease-in;
+    }
+    .links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #c4a47c;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #c4a47c;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      background-color: rgba(196, 164, 124, 0.05);
+      font-size: 1rem;
+    }
+    .links a:hover {
+      background-color: #c4a47c;
+      color: #1b1b1b;
+    }
+    .quote {
+      font-style: italic;
+      color: #aaa;
+      margin-top: 2.5rem;
+      font-size: 1rem;
+      max-width: 90%;
+      animation: fadeIn 2.6s ease-in;
+    }
+    .footer {
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: #777;
+      font-family: 'Fira Code', monospace;
+      max-width: 90%;
+      animation: fadeIn 2.8s ease-in;
+    }
+    .projects {
+      margin-top: 3rem;
+      max-width: 700px;
+      text-align: left;
+      animation: fadeIn 2.7s ease-in;
+    }
+    .projects h3 {
+      color: #c4a47c;
+      border-bottom: 1px solid #444;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .project-item {
+      margin-bottom: 1.5rem;
+    }
+    .project-item a {
       color: #f5deb3;
       text-decoration: none;
-      border-bottom: 1px dashed #f5deb3;
-      transition: all 0.3s ease;
+      font-weight: bold;
     }
-    .project-links a:hover {
+    .project-item a:hover {
       color: #c4a47c;
-      border-bottom-color: #c4a47c;
+    }
+    .project-desc {
+      font-size: 0.95rem;
+      color: #aaa;
+      margin-top: 0.25rem;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      h2 { font-size: 1rem; }
+      .links a { font-size: 0.9rem; }
+      .footer { font-size: 0.75rem; }
     }
   </style>
 </head>
@@ -59,9 +160,13 @@
     </a>
   </div>
 
-  <div class="project-links">
-    <h2>🧪 Projects</h2>
-    <a href="https://hesamverse.github.io/devpathfinder" target="_blank">🔎 DevPathFinder — Discover Your Programming Role</a>
+  <div class="projects">
+    <h3>🧪 My Projects</h3>
+    <div class="project-item">
+      <a href="https://github.com/hesamverse/DevPathFinder/blob/main/index.html" target="_blank">🔎 DevPathFinder</a>
+      <div class="project-desc">A fun, personality-based tool to help you discover your ideal programming role (backend, frontend, security).</div>
+    </div>
+    <!-- Add more projects below this line -->
   </div>
 
   <p class="quote">
