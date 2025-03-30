@@ -24,8 +24,14 @@
       animation: fadeIn 1.5s ease-in;
     }
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
     h1 {
       font-size: 3rem;
@@ -76,6 +82,11 @@
       background-color: #c4a47c;
       color: #1b1b1b;
     }
+    .links svg, .links img {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
     .quote {
       font-style: italic;
       color: #aaa;
@@ -92,39 +103,20 @@
       max-width: 90%;
       animation: fadeIn 2.8s ease-in;
     }
-    .projects {
-      margin-top: 3rem;
-      max-width: 700px;
-      text-align: left;
-      animation: fadeIn 2.7s ease-in;
-    }
-    .projects h3 {
-      color: #c4a47c;
-      border-bottom: 1px solid #444;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-    }
-    .project-item {
-      margin-bottom: 1.5rem;
-    }
-    .project-item a {
-      color: #f5deb3;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .project-item a:hover {
-      color: #c4a47c;
-    }
-    .project-desc {
-      font-size: 0.95rem;
-      color: #aaa;
-      margin-top: 0.25rem;
-    }
+
     @media (max-width: 600px) {
-      h1 { font-size: 2rem; }
-      h2 { font-size: 1rem; }
-      .links a { font-size: 0.9rem; }
-      .footer { font-size: 0.75rem; }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+      .links a {
+        font-size: 0.9rem;
+      }
+      .footer {
+        font-size: 0.75rem;
+      }
     }
   </style>
 </head>
@@ -137,7 +129,7 @@
     With roots in financial management and a philosophy rooted in freedom & transparency, I bridge classic thought and cutting-edge code.
   </p>
 
-<div class="links">
+  <div class="links">
     <a href="https://github.com/hesamverse" target="_blank">
       <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
       GitHub
@@ -158,15 +150,6 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email">
       Email
     </a>
-  </div>
-
-  <div class="projects">
-    <h3>🧪 My Projects</h3>
-    <div class="project-item">
-      <a href="https://github.com/hesamverse/DevPathFinder/blob/main/index.html" target="_blank">🔎 DevPathFinder</a>
-      <div class="project-desc">A fun, personality-based tool to help you discover your ideal programming role (backend, frontend, security).</div>
-    </div>
-    <!-- Add more projects below this line -->
   </div>
 
   <p class="quote">
